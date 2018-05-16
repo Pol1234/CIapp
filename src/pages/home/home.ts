@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { DetallePaquetePage } from '../detalle-paquete/detalle-paquete';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +12,8 @@ export class HomePage {
 
   }
 
+  // detalles de paquetes
+  verDetalles(){
+    this.navCtrl.push(DetallePaquetePage);
+  }
 }
